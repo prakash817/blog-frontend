@@ -13,7 +13,7 @@ export default function Register() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("/auth/register", {
+      const res = await axios.post("https://blogapp-sa71.onrender.com/api/auth/register", {
         username,
         email,
         password,
@@ -57,7 +57,7 @@ export default function Register() {
           Login
         </Link>
       </button>
-      {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
+      {error && <span style={{ color: "red", marginTop: "10px" }}>Something went wrong!</span>}
     </div>
   );
 }

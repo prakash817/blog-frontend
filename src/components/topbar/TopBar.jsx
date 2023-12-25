@@ -7,7 +7,8 @@ export default function TopBar() {
   const { user, dispatch } = useContext(Context);
   // const dummyImg = "https://www.ihna.edu.au/blog/wp-content/uploads/2022/10/user-dummy.png"
   const dummyImg = "https://i.pinimg.com/originals/7d/34/d9/7d34d9d53640af5cfd2614c57dfa7f13.png"
-  const PF = "http://localhost:5000/images/"
+  // const PF = "http://localhost:5000/images/"
+  const PF = "https://blogapp-sa71.onrender.com/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
